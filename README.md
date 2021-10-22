@@ -7,12 +7,14 @@ It is mostly for personal use.
 For example:
 
 ```sh
-npx create-react-app my-app --template personal-typescript
+npx create-react-app my-app --template git+ssh://git@github.com:szendihorvathjozsef/cra-template-personal-typescript.git
 
 # or
 
-yarn create react-app my-app --template personal-typescript
+yarn create react-app my-app --template git+ssh://git@github.com:szendihorvathjozsef/cra-template-personal-typescript.git
 ```
+
+### You might have to add github to your known host in ssh.
 
 For more information, please refer to:
 
