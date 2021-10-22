@@ -1,7 +1,9 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 import "./index.css";
 import App from "./App";
+import { store } from "./app/store";
 import reportWebVitals from "./reportWebVitals";
 import SuspenseFallback from "./components/SuspenseFallback";
 
@@ -9,9 +11,11 @@ import "./i18n";
 
 ReactDOM.render(
   <React.StrictMode>
-    <React.Suspense fallback={<SuspenseFallback />}>
-      <App />
-    </React.Suspense>
+    <Provider store={store}>
+      <React.Suspense fallback={<SuspenseFallback />}>
+        <App />
+      </React.Suspense>
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root"),
 );
