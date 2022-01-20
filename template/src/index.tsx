@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import "./index.css";
 import App from "./App";
-import { store } from "./app/store";
+import { store } from "./config/store";
 import reportWebVitals from "./reportWebVitals";
 import SuspenseFallback from "./components/SuspenseFallback";
 
