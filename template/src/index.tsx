@@ -7,7 +7,7 @@ import { store } from "./config/store";
 import reportWebVitals from "./reportWebVitals";
 import SuspenseFallback from "./components/SuspenseFallback";
 
-import "./i18n";
+import "./config/i18n";
 
 ReactDOM.render(
   <React.StrictMode>
